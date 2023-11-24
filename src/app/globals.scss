@@ -1,0 +1,192 @@
+@mixin theme(
+  $background-color,
+  $primary-text-color,
+  $secondary-text-color,
+  $link-color,
+  $visited-link-color,
+  $button-color
+) {
+  background-color: $background-color;
+  color: $primary-text-color;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:visited {
+      color: $visited-link-color;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code:not(pre > code) {
+    background-color: $primary-text-color;
+    color: $background-color;
+  }
+
+  figcaption {
+    color: $secondary-text-color;
+  }
+
+  button {
+    background-color: $button-color;
+    color: $primary-text-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($background-color, 20%);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+@mixin dark-appearance {
+  $background-color: #212121;
+  @include theme(
+    $background-color,
+    #fafafa,
+    #eeeeee,
+    #0071bc,
+    #a359e9,
+    lighten($background-color, 10%)
+  );
+}
+
+@mixin light-appearance {
+  $background-color: #ffffff;
+  @include theme(
+    $background-color,
+    #212121,
+    #666666,
+    #1e70bf,
+    #921292,
+    darken($background-color, 10%)
+  );
+}
+
+body[theme="dark"] {
+  @include dark-appearance;
+}
+
+body[theme="light"] {
+  @include light-appearance;
+}
+
+span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+button {
+  font-family: monospace;
+  line-height: 1.4;
+  margin: 0;
+}
+
+button {
+  font-size: 16px;
+}
+
+body {
+  font-size: 20px;
+  min-height: 100%;
+  overflow-wrap: break-word;
+  max-width: 70%;
+  margin: 0px auto;
+  padding: 2rem 2rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid #212121;
+  margin: 1rem;
+  float: right;
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 12px;
+  }
+
+  body {
+    font-size: 16;
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  span {
+    flex-wrap: wrap;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  span {
+    justify-content: center;
+  }
+
+  .theme-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .avatar {
+    display: none;
+  }
+}
