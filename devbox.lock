@@ -1,0 +1,25 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nodejs@latest": {
+      "last_modified": "2023-12-01T12:14:05Z",
+      "resolved": "github:NixOS/nixpkgs/77da99a144cd341408308e0a37622f5edcc6c5ba#nodejs_21",
+      "source": "devbox-search",
+      "version": "21.3.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/14v3za8nwj0pzyslxgk91ivrwli4r5d7-nodejs-21.3.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/zs16ndz5d90ybi31b0my5q63ym12jmjx-nodejs-21.3.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/s5f7nr4g0mp3x7p2c5lskdwqb8rd8nwh-nodejs-21.3.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/5gx81a63z7mklr8kmjxybc3ysjn4gmf2-nodejs-21.3.0"
+        }
+      }
+    }
+  }
+}

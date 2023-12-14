@@ -28,21 +28,25 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
+              {greeting.subTitles.map((subTitle, index) => (
+                <p
+                  key={index}
+                  className={
+                    isDark
+                      ? "dark-mode greeting-text-p"
+                      : "greeting-text-p subTitle"
+                  }
+                >
+                  {subTitle}
+                </p>
+              ))}
+
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text={greeting.contactButtonText} href="#contact" />
                 {greeting.resumeLink && (
                   <Button
-                    text="See my resume"
+                    text={greeting.seeResumeButtonText}
                     newTab={true}
                     href={greeting.resumeLink}
                   />

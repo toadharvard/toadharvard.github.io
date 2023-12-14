@@ -127,6 +127,18 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.telegram ? (
+        <a
+          href={socialMediaLinks.telegram}
+          className="icon-button telegram" //TODO: fix coloring, I am so lazyyyy
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-telegram"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }

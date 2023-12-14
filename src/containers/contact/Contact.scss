@@ -44,16 +44,24 @@
 .contact-margin-top {
   margin-top: 4rem;
 }
-
-.contact-image-div > img {
+.contact-image-div {
   max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.contact-image > img {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
 }
 
 /* Media Query */
 @media (max-width: 1380px), (max-width: 768px) {
+  .contact-div-main {
+    flex-direction: column-reverse;
+  }
   .contact-title {
     font-size: 56px;
     font-weight: 400;
@@ -79,9 +87,5 @@
   .contact-detail,
   .contact-detail-email {
     font-size: 20px;
-  }
-
-  .contact-image-div {
-    display: none;
   }
 }
