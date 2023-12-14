@@ -25,7 +25,10 @@ export default function AchievementCard({cardInfo, isDark}) {
           {cardInfo.title}
         </h5>
         {cardInfo.subtitles.map((subtitle, index) => (
-          <p key={index} className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
+          <p
+            key={index}
+            className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}
+          >
             {subtitle}
           </p>
         ))}

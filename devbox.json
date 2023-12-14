@@ -1,8 +1,6 @@
 {
   "packages": ["nodejs@latest"],
   "shell": {
-    "init_hook": [
-      "npm install"
-    ]
+    "init_hook": ["npm install"]
   }
 }
