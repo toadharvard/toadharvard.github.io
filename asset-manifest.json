@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d24efcac.css",
+    "main.js": "/static/js/main.a6728b02.js",
+    "static/css/64.182f7323.chunk.css": "/static/css/64.182f7323.chunk.css",
+    "static/js/64.6f2aca4d.chunk.js": "/static/js/64.6f2aca4d.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/yandexSHBLogo.png": "/static/media/yandexSHBLogo.0fbe77e4d6441bcd7725.png",
+    "static/media/spbu.png": "/static/media/spbu.4e03f19ec50a639a06db.png",
+    "static/media/profilePic.jpg": "/static/media/profilePic.f5db7c02accafe6d2aa0.jpg",
+    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/yandexLogo.png": "/static/media/yandexLogo.20c000a306a33ea9a758.png",
+    "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "index.html": "/index.html",
+    "main.d24efcac.css.map": "/static/css/main.d24efcac.css.map",
+    "main.a6728b02.js.map": "/static/js/main.a6728b02.js.map",
+    "64.182f7323.chunk.css.map": "/static/css/64.182f7323.chunk.css.map",
+    "64.6f2aca4d.chunk.js.map": "/static/js/64.6f2aca4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d24efcac.css",
+    "static/js/main.a6728b02.js"
+  ]
+}
