@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/partyLoader"; // Rename to your fil
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 1000 // Set animation duration as per your animation
 };

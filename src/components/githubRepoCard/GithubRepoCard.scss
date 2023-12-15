@@ -93,3 +93,12 @@
   background-color: $buttonColor !important;
   box-shadow: 0px 0px 16px $darkBoxShadow;
 }
+
+@media (max-width: 400px) {
+  .repo-name {
+    font-size: 20px;
+  }
+  .repo-description{
+    font-size: 16px;
+  }
+}

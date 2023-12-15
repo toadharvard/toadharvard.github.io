@@ -45,9 +45,18 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
+.greeting-image > img {
+  width: 100%;
+  max-height: 50vh;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.greeting-image-div {
   max-width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 .wave-emoji {
@@ -91,7 +100,14 @@
     font-size: 20px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
+  .main {
+    width: auto;
+  }
+  .greeting-main {
+    flex-direction: column;
+  }
   .button-greeting-div {
     justify-content: space-around;
   }
@@ -103,17 +119,5 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
-  }
-}
-
-@media (max-width: 320px) {
-  .main {
-    width: auto;
   }
 }

@@ -52,9 +52,11 @@
 }
 
 .contact-image > img {
-  width: 50vh;
-  height: 50vh;
+  width: 100%;
+  max-height: 50vh;
   border-radius: 50%;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 /* Media Query */
